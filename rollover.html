@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      // Variable Declaration
+      var CRC1 = new Image();
+      var CRC2 = new Image();
+      var JOB1 = new Image();
+      var JOB2 = new Image();
+      var JOB3 = new Image();
+      var JOB4 = new Image();
+      var JOB5 = new Image();
+      var JOB6 = new Image();
+
+      // Assign variable references to the actual image files
+      CRC1.src = "/images/crc-logo.png";
+      CRC2.src = "/images/crc-building.jpg";
+      JOB1.src = "/images/flex-jobs-text.png";
+      JOB2.src = "/images/flex-jobs-logo.png";
+      JOB3.src = "/images/angel-list-text.png";
+      JOB4.src = "/images/angel-list-logo.png";
+      JOB5.src = "/images/dice-text.jpg";
+      JOB6.src = "images/dice-logo.jpg";
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        JavaScript Rollover Examples
+      </h1>
+
+      <div class="row-one">
+        <div class="box-one">
+          <a
+            href="https://www.flexjobs.com/"
+            onmouseover="document.flexjobs.src=JOB1.src"
+            onmouseout="document.flexjobs.src=JOB2.src"
+          >
+            <img
+              name="flexjobs"
+              src="/images/flex-jobs-logo.png"
+            />
+          </a>
+          <p>Flexjobs</p>
+        </div>
+        <div class="box-two">
+          <a
+            href="https://angel.co/"
+            onmouseover="document.angelList.src=JOB3.src"
+            onmouseout="document.angelList.src=JOB4.src"
+          >
+            <img
+              name="angelList"
+              src="/images/angel-list-logo.png"
+            />
+          </a>
+          <p class="pushed-right-text">
+            Angel List
+          </p>
+        </div>
+      </div>
+
+      <div class="row-two">
+        <div class="box-three">
+          <a
+            href="https://www.dice.com/"
+            onmouseover="document.dice.src=JOB5.src"
+            onmouseout="document.dice.src=JOB6.src"
+          >
+            <img
+              name="dice"
+              src="/images/dice-logo.jpg"
+            />
+          </a>
+          <p class="centered-text">Dice</p>
+        </div>
+      </div>
+
+      <div class="row-three">
+        <div class="box-four">
+          <a
+            href="http://www.crc.losrios.edu"
+            onmouseover="document.CRC_button.src=CRC2.src"
+            onmouseout="document.CRC_button.src=CRC1.src"
+          >
+            <img
+              name="CRC_button"
+              src="/images/crc-logo.png"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
